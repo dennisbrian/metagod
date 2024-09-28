@@ -16,7 +16,7 @@
     <link rel="apple-touch-icon-precomposed" href="assets/images/favicon.png">
     
 </head>
-<body class="home-1 header-fixed">
+<body class="home-3 header-fixed">
 
     <!-- Preloading -->
     <div class="preloader">
@@ -34,7 +34,7 @@
 
     <!-- Header -->
     <header id="header_main" class="header">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <div class="header__body d-flex justify-content-between">
@@ -50,35 +50,45 @@
                         <div class="header__right">
                             <nav id="main-nav" class="main-nav">
                                 <ul id="menu-primary-menu" class="menu">
-                                    <li class="menu-item-has-children current-menu-item">
+                                    <li class="menu-item-has-children">
                                         <a href="#">Home</a>
                                         <ul class="sub-menu">
-                                            <li class="menu-item current-item"><a href="index.html">Home 01</a></li>
+                                            <li class="menu-item"><a href="index.html">Home 01</a></li>
                                             <li class="menu-item"><a href="home-02.html">Home 02</a></li>
                                             <li class="menu-item"><a href="home-03.html">Home 03</a></li>
-                                            <li class="menu-item"><a href="OnePage.html">OnePage</a></li>
+                                            <li class="menu-item current-item"><a href="OnePage.html">OnePage</a></li>
                                         </ul>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <a href="about.html">About</a>
+                                        <a href="#about">About</a>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <a href="collections.html">Collections </a>
+                                        <a href="#info">Infomation</a>
+                                    </li>
+
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#roadmap">Road Map</a>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <a href="#">Pages</a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item"><a href="team.html">Team</a></li>
-                                            <li class="menu-item"><a href="roadmap.html">Road Map</a></li>
-                                            <li class="menu-item"><a href="our-mission.html">Our Mission</a></li>
-                                            <li class="menu-item"><a href="blog-list.html">Blog List</a></li>
-                                            <li class="menu-item"><a href="blog-grid.html">Blog Grid</a></li>
-                                            <li class="menu-item"><a href="blog-single.html">Blog Single</a></li>
-                                            <li class="menu-item"><a href="faq.html">Faq</a></li>
-                                        </ul>
+                                        <a href="#portfolio">Portfolio</a>
                                     </li>
                                     <li class="menu-item menu-item-has-children">
-                                        <a href="contact.html">Contact</a>
+                                        <a href="#team">Team</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#technology">Technology</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#testimonial">Testimonial</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#counter">Counter</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#blog">Blog</a>
+                                    </li>
+                                    <li class="menu-item menu-item-has-children">
+                                        <a href="#faq">FAQ</a>
                                     </li>
                                 </ul>
                             </nav><!-- /#main-nav -->
@@ -96,11 +106,12 @@
     </header>
     <!-- end Header -->
 
+
     <!-- Hero Slider -->
     <section class="tf-section hero-slider">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5 col-md-6 col-12">
+                <div class="col-xl-5 col-md-12 col-12">
                     <div class="block-text pt-24" >
                         <h6 class="sub-title mb-6" data-aos="fade-up">We are Monteno NFT</h6>
                         <h2 class="title mb-26" data-aos="fade-up">Collect Next Generation NFTs Today </h2>
@@ -108,32 +119,92 @@
                         <a href="about.html" class="btn-action style-2" data-aos="fade-up" data-aos-duration="1200" >Get Connected</a>
                     </div>
                 </div>
-                <div class="col-xl-7 col-md-6 col-12">
-                    <div class="content-right d-flex">
-                        <div class="swiper-container swiper mySwiper1 swiper-h">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><div class="item bg-2"><img src="assets/images/items/item-02.png" alt="Monteno"></div>
+                <div class="col-xl-7 col-md-12 col-12">
+                    <div class="token-sale" data-aos="zoom-in" data-aos-duration="2000">
+                        <h5 class="fs-30">Token Sale Ends In</h5>
+                        <div class="countdown-container">
+                            <div class="clock row">
+                            
+                            <!-- days --> 
+                            <div class="clock-item clock-days countdown-time-value col-sm-6 col-md-3 col-3">
+                                <div class="wrap">
+                                    <div class="inner">
+                                        <div id="canvas_days" class="clock-canvas"></div>
+                                        <div class="number">
+                                            <p class="val">0</p>
+                                            
+                                        </div>
+                                        <div class="unit">
+                                            <p class="type-days type-time">Days</p>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="swiper-slide"><div class="item bg-1"><img src="assets/images/items/item-01.png" alt="Monteno"></div></div>
-                                <div class="swiper-slide"><div class="item bg-2"><img src="assets/images/items/item-02.png" alt="Monteno"></div></div>
+                            </div>
+                            
+                            <!-- hours --> 
+                            
+                            <div class="clock-item clock-hours countdown-time-value col-sm-6 col-md-3 col-3">
+                                <div class="wrap">
+                                    <div class="inner">
+                                        <div id="canvas_hours" class="clock-canvas"></div>
+                                            <div class="number">
+                                                <p class="val">0</p>
+                                                
+                                            </div>
+                                            <div class="unit">
+                                                <p class="type-hours type-time">Hours</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- minutes --> 
+                            <div class="clock-item clock-minutes countdown-time-value col-sm-6 col-md-3 col-3">
+                                <div class="wrap">
+                                    <div class="inner">
+                                        <div id="canvas_minutes" class="clock-canvas"></div>
+                                            <div class="number">
+                                                <p class="val">0</p>
+                                                
+                                            </div>
+                                            <div class="unit">
+                                                <p class="type-minutes type-time">Minutes</p>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- seconds --> 
+                            <div class="clock-item clock-seconds countdown-time-value col-sm-6 col-md-3 col-3">
+                                <div class="wrap">
+                                    <div class="inner">
+                                        <div id="canvas_seconds" class="clock-canvas"></div>
+                                            <div class="number">
+                                                <p class="val">0</p>
+                                            </div>
+                                            <div class="unit">
+                                                <p class="type-seconds type-time">Seconds</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="tf-progress-bar">
+                            <div class="meter orange">
+                                <span data-progress="74" style="width:0;"></span>
+                            </div>
+                            <div class="descrip">
+                                <h6 class="fs-14">$18.090<span>Pledget</span></h6>
+                                <h6 class="fs-16">$35.090<span>Goal</span></h6>
                             </div>
                         </div>
-                        <div class="swiper-container swiper mySwiper2 swiper-h ">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><div class="item bg-1"><img src="assets/images/items/item-03.png" alt="Monteno"></div>
-                                </div>
-                                <div class="swiper-slide"><div class="item bg-2"><img src="assets/images/items/item-04.png" alt="Monteno"></div></div>
-                                <div class="swiper-slide"><div class="item bg-1"><img src="assets/images/items/item-05.png" alt="Monteno"></div></div>
-                            </div>
+                        <div class="button-action">
+                            <a href="contact.html" class="btn-action style-2" >Purchase Now</a>
                         </div>
-                        <div class="swiper-container swiper mySwiper3 swiper-h d-m-none">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide"><div class="item bg-2"><img src="assets/images/items/item-06.png" alt="Monteno"></div>
-                                </div>
-                                <div class="swiper-slide"><div class="item bg-1"><img src="assets/images/items/item-07.png" alt="Monteno"></div></div>
-                                <div class="swiper-slide"><div class="item bg-2"><img src="assets/images/items/item-06.png" alt="Monteno"></div></div>
-                            </div>
-                        </div>
+                        
+                        
                     </div>
                 </div>
             </div>
@@ -142,17 +213,17 @@
     <!-- end Hero Slider -->
 
     <!-- About Us -->
-    <section class="tf-section section-about">
+    <section class="tf-section section-about" id="about">
         <div class="container">
             <div class="row reverse">
                 <div class="col-xl-7 col-md-12">
                     <div class="group-image">
                         <div class="left">
-                            <div class="item bg-1"><img src="assets/images/items/item-08.png" alt="Monteno"></div>
+                            <div class="item bg-1 big"><img src="assets/images/items/item-27.png" alt="Monteno"></div>
                         </div>
                         <div class="right">
-                            <div class="item bg-2"><img src="assets/images/items/item-09.png" alt="Monteno"></div>
-                            <div class="item bg-3"><img src="assets/images/items/item-10.png" alt="Monteno"></div>
+                            <div class="item bg-2 small"><img src="assets/images/items/item-28.png" alt="Monteno"></div>
+                            <div class="item bg-3"><img src="assets/images/items/item-29.png" alt="Monteno"></div>
                         </div>
                     </div>
                 </div>
@@ -170,202 +241,58 @@
     </section>
     <!-- end About Us -->
 
-    <!-- Speciality -->
-    <section class="tf-section section-speciality">
+    <!-- Infomation -->
+    <section class="tf-section section-info" id="info">
         <div class="container">
             <div class="row">
-                <div class="col-xl-5 col-md-12">
-                    <div class="block-text pt-128 pd-0">
-                        <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">Our Speciality</h5>
-                        <h3 class="title mb-28" data-aos="fade-up" data-aos-duration="1000">Complete Solutions for your NFT</h3>
-                        <p class="fs-21" data-aos="fade-up" data-aos-duration="1000">Sed ut perspiciatis unde omnis iste natus enim ad minim veniam, quis nostrud exercit </p>
-                    </div>
-                </div>
                 <div class="col-xl-7 col-md-12">
-                    <div class="section-speciality__box">
-                        <div class="box-item bg-2 mr-28" data-aos="flip-left">
-                            <h3>01</h3>
-                            <a href="collections.html" class="h5">Huge Collection</a>
-                            <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
-                        </div>
-                        <div class="box-item bg-2 mt-45" data-aos="flip-right" data-aos-duration="1000">
-                            <h3>02</h3>
-                            <a href="collections.html" class="h5">High Quality</a>
-                            <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
-                        </div>
-                        <div class="box-item bg-2 mr-28 mt--16" data-aos="flip-left">
-                            <h3>03</h3>
-                            <a href="collections.html" class="h5">Top Resource</a>
-                            <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
-                        </div>
-                        <div class="box-item bg-2 mt-29" data-aos="flip-right" data-aos-duration="1000">
-                            <h3>04</h3>
-                            <a href="collections.html" class="h5">Big Community</a>
-                            <p>Oficia dese runt mollit anim id est labo met, consectetur adipis</p>
-                        </div>
+                    <div class="block-text pt-12">
+                        <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">Token Information</h5>
+                        <h3 class="title mb-26" data-aos="fade-up" data-aos-duration="1000">Here’s what you need to know about NFT </h3>
+                        <p class="fs-21 mb-50" data-aos="fade-up" data-aos-duration="1000">Sed ut perspiciatis unde omnis iste natus enim ad minim veniam, quis nostrud exercit </p>
+                        <a href="contact.html" class="btn-action style-2"  data-aos="fade-up" data-aos-duration="1200">Buy Token</a>
+                    </div>
+                </div>
+                <div class="col-xl-5 col-md-12">
+                    <div class="box-info" data-aos="zoom-in" data-aos-duration="2000">
+                        <ul>
+                            <li>
+                                <h5 class="fs-18"><img src="assets/images/icon/user.png" alt="Monteno"> Name :</h5>
+                                <p class="fs-16">Al Mahmud</p>
+                            </li>
+                            <li>
+                                <h5 class="fs-18"><img src="assets/images/icon/box.png" alt="Monteno">Flatform :</h5>
+                                <p class="fs-16">Monteno</p>
+                            </li>
+                            <li>
+                                <h5 class="fs-18"><img src="assets/images/icon/box.png" alt="Monteno">Total Supply :</h5>
+                                <p class="fs-16">100'000tokens</p>
+                            </li>
+                            <li>
+                                <h5 class="fs-18"><img src="assets/images/icon/box.png" alt="Monteno">ICO supply :</h5>
+                                <p class="fs-16">60'000 tokens</p>
+                            </li>
+                            <li>
+                                <h5 class="fs-18"><img src="assets/images/icon/payment.png" alt="Monteno">Token Price :</h5>
+                                <p class="fs-16">0.25€ / 0.29 USD</p>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end Speciality -->
-    
-    <!-- Portfolio -->
-    <section class="tf-section porfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="block-text center">
-                        <h1 class="heading-bg" data-aos="fade-in" data-aos-duration="1000"><span>Join</span></h1>
-                        <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">Join NFT Portfolio</h5>
-                        <h3 class="title mb-28" data-aos="fade-up" data-aos-duration="1000">Become a Monteno <br> Player Now</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-61">
-                <div class="col-md-6">
-                    <div class="icon-box bg-2" data-aos="fade-up">
-                        <div class="icon">
-                            <img src="assets/images/icon/wallet.png" alt="Monteno">
-                        </div>
-                        <div class="content">
-                            <p class="fs-16 color-main">Step 01</p>
-                            <a class="h5">
-                                Connect Your Wallet
-                            </a>
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore quis </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="icon-box bg-2" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="icon">
-                            <img src="assets/images/icon/shopping-cart.png" alt="Monteno">
-                        </div>
-                        <div class="content">
-                            <p class="fs-16 color-main">Step 02</p>
-                            <a class="h5">
-                                Buy Your NFT
-                            </a>
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore quis </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="icon-box bg-2" data-aos="fade-up">
-                        <div class="icon">
-                            <img src="assets/images/icon/folder.png" alt="Monteno">
-                        </div>
-                        <div class="content">
-                            <p class="fs-16 color-main">Step 03</p>
-                            <a class="h5">
-                                Create Collection
-                            </a>
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore quis </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="icon-box bg-2" data-aos="fade-up" data-aos-duration="1000">
-                        <div class="icon">
-                            <img src="assets/images/icon/money-bag.png" alt="Monteno">
-                        </div>
-                        <div class="content">
-                            <p class="fs-16 color-main">Step 04</p>
-                            <a class="h5">
-                                Sell Your NFT
-                            </a>
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore quis </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end Portfolio -->
-
-    <!-- Montono -->
-    <section class="tf-section montono">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-3 col-md-6">
-                    <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="assets/images/items/montono-01.png" alt="Monteno">
-                        <div class="image-box__title">
-                            <a href="collections.html" class="h6">Monteno item 1</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="image-box" data-aos="fade-up" data-aos-duration="1200">
-                        <img src="assets/images/items/montono-02.png" alt="Monteno">
-                        <div class="image-box__title">
-                            <a href="collections.html" class="h6">Monteno item 2</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="image-box" data-aos="fade-up" data-aos-duration="1400">
-                        <img src="assets/images/items/montono-03.png" alt="Monteno">
-                        <div class="image-box__title">
-                            <a href="collections.html" class="h6">Monteno item 3</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="image-box" data-aos="fade-up" data-aos-duration="1600">
-                        <img src="assets/images/items/montono-04.png" alt="Monteno">
-                        <div class="image-box__title">
-                            <a href="collections.html" class="h6">Monteno item 4</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
-                        <img src="assets/images/items/montono-05.png" alt="Monteno">
-                        <div class="image-box__title">
-                            <a href="collections.html" class="h6">Monteno item 5</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="image-box" data-aos="fade-up" data-aos-duration="1200">
-                        <img src="assets/images/items/montono-06.png" alt="Monteno">
-                        <div class="image-box__title">
-                            <a href="collections.html" class="h6">Monteno item 6</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="image-box" data-aos="fade-up" data-aos-duration="1400">
-                        <img src="assets/images/items/montono-07.png" alt="Monteno">
-                        <div class="image-box__title">
-                            <a href="collections.html" class="h6">Monteno item 7</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-3 col-md-6">
-                    <div class="image-box" data-aos="fade-up" data-aos-duration="1600">
-                        <img src="assets/images/items/montono-08.png" alt="Monteno">
-                        <div class="image-box__title">
-                            <a href="collections.html" class="h6">Monteno item 8</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end Montono -->
+    <!-- end Infomation -->
 
     <!-- Road Map -->
-    <section class="tf-section road-map">
+    <section class="tf-section road-map" id="roadmap">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="block-text center">
                         <h1 class="heading-bg" data-aos="fade-in" data-aos-duration="1000"><span>Road Map</span></h1>
                         <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">Road Map</h5>
-                        <h3 class="title mb-28" data-aos="fade-up" data-aos-duration="1000">The Journey of <br> Monteno NFT</h3>
+                        <h3 class="title mb-28" data-aos="fade-up" data-aos-duration="1000">The Journey of NFT <br> Portfolio </h3>
                     </div>
                 </div>
             </div>
@@ -373,34 +300,71 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="road-map__content s1">
-                        <div class="box-time left" data-aos="fade-right" data-aos-offset="300">
-                            <span data-aos="zoom-in" data-aos-offset="300"><i class="fa fa-check"></i></span>
-                            <p class="fs-16 color-main mb-0">February 01, 2022</p>
-                            <h5 class="title mb-20">Idea Generation</h5>
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met conse ctetur adipi smod tempor inc ididunt ut labore et dolore quis </p>
+                    <div class="road-map__content style-2">
+                        <div class="swiper swiper-road-map">
+                            <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="swiper-box top">
+                                    <div class="box-time" data-aos="fade-down">
+                                        <span data-aos="zoom-in" data-aos-offset="300"><i class="fa fa-check"></i></span> 
+                                        <h5 class="title mb-20">Idea Generation</h5>
+                                        <p class="fs-18">Oficia dese runt molit anim iesod est labo met conse ctetur adipi</p>
+                                    </div>
+                                    <p class="fs-16 color-main mb-0">February 01, 2022</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box bottom">
+                                    <div class="box-time" data-aos="fade-up">
+                                        <span data-aos="zoom-in" data-aos-offset="300"><i class="fa fa-check"></i></span>
+                                        
+                                        <h5 class="title mb-20">Research</h5>
+                                        <p class="fs-18">Oficia dese runt molit anim iesod est labo met conse ctetur adipi</p>
+                                    </div>
+                                    <p class="fs-16 color-main mb-0">February 01, 2022</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box top">
+                                    <div class="box-time" data-aos="fade-down">
+                                        <span data-aos="zoom-in" data-aos-offset="300"><i class="fa fa-circle"></i></span>
+                                        <h5 class="title mb-20">Development</h5>
+                                        <p class="fs-18">Oficia dese runt molit anim iesod est labo met conse ctetur adipi</p>
+                                    </div>
+                                    <p class="fs-16 color-main mb-0">February 01, 2022</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box bottom">
+                                    <div class="box-time" data-aos="fade-up">
+                                        <span data-aos="zoom-in" data-aos-offset="300"><i class="fa fa-angle-right color2"></i></span>
+                                        <h5 class="title mb-20">Result</h5>
+                                        <p class="fs-18">Oficia dese runt molit anim iesod est labo met conse ctetur adipi</p>
+                                    </div>
+                                    <p class="fs-16 color-main mb-0">February 01, 2022</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="swiper-box top">
+                                    <div class="box-time">
+                                        <span data-aos="zoom-in" data-aos-offset="300"><i class="fa fa-check"></i></span> 
+                                        <h5 class="title mb-20">Idea Generation</h5>
+                                        <p class="fs-18">Oficia dese runt molit anim iesod est labo met conse ctetur adipi</p>
+                                    </div>
+                                    <p class="fs-16 color-main mb-0">February 01, 2022</p>
+                                </div>
+                            </div>
+
+                            </div>
+                            
+                        
                         </div>
-                        <div class="box-time right mt-223" data-aos="fade-up" data-aos-offset="300">
-                            <span data-aos="zoom-in" data-aos-offset="300"><i class="fa fa-check"></i></span>
-                            <p class="fs-16 color-main mb-0">March 30, 2022</p>
-                            <h5 class="title mb-20">Design & Development</h5>
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met conse ctetur adipi smod tempor inc ididunt ut labore et dolore quis </p>
-                        </div>
-                        <div class="box-time left mt--23" data-aos="fade-right" data-aos-offset="300">
-                            <span data-aos="zoom-in" data-aos-offset="300"><i class="fa fa-circle"></i></span>
-                            <p class="fs-16 color-main mb-0">April 20, 2022</p>
-                            <h5 class="title mb-20">Initial Release </h5>
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met conse ctetur adipi smod tempor inc ididunt ut labore et dolore quis </p>
-                        </div>
-                        <div class="box-time right mt-200" data-aos="fade-up" data-aos-offset="300">
-                            <span data-aos="zoom-in" data-aos-offset="300"><i class="fa fa-angle-down color2"></i></span>
-                            <p class="fs-16 color-main mb-0">May 30, 2022</p>
-                            <h5 class="title mb-20">Result & Final Report</h5>
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met conse ctetur adipi smod tempor inc ididunt ut labore et dolore quis </p>
-                        </div>
-                    </div>
-                    <div class="view-all center" data-aos="fade-up">
-                        <a href="roadmap.html" class="btn-action style-2">View Full</a>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination"></div>
+                        
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
@@ -408,34 +372,82 @@
     </section>
     <!-- end Road Map -->
 
-    <!-- Newsletter -->
-    <section class="tf-section newsletter">
-        <div class="container">
+    <!-- Montono -->
+    <section class="tf-section montono" id="portfolio">
+        <div class="container-fluid">
             <div class="row">
-
-                <div class="col-12">
-                    <div class="newsletter__body" data-aos="fade-up">
-                        <div class="block-text">
-                            <h3 class="mb-13">Get Newsletter</h3>
-                            <p class="fs-21">
-                                Get udpated with news, tips & tricks
-                            </p>
+                <div class="col-md-12">
+                    <div class="block-text center">
+                        <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">NFT Portfolio Collections</h5>
+                        <h3 class="title mb-28" data-aos="fade-up" data-aos-duration="1000">Checkout Our NFT<br> Collections</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row mt-52">
+                <div class="col-xl-4 col-md-6">
+                    <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="assets/images/items/montono-09.png" alt="Monteno">
+                        <div class="image-box__title">
+                            <a href="collections.html" class="h6">Monteno item 1</a>
                         </div>
-                        <form class="body__form">
-                            <div class="form-group">
-                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email here" required>
-                              <button type="submit" class="btn btn-primary">Subscribe</button>
-                            </div>
-                          </form>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="assets/images/items/montono-10.png" alt="Monteno">
+                        <div class="image-box__title">
+                            <a href="collections.html" class="h6">Monteno item 2</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="assets/images/items/montono-11.png" alt="Monteno">
+                        <div class="image-box__title">
+                            <a href="collections.html" class="h6">Monteno item 3</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="assets/images/items/montono-12.png" alt="Monteno">
+                        <div class="image-box__title">
+                            <a href="collections.html" class="h6">Monteno item 4</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="assets/images/items/montono-13.png" alt="Monteno">
+                        <div class="image-box__title">
+                            <a href="collections.html" class="h6">Monteno item 5</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="image-box" data-aos="fade-up" data-aos-duration="1000">
+                        <img src="assets/images/items/montono-14.png" alt="Monteno">
+                        <div class="image-box__title">
+                            <a href="collections.html" class="h6">Monteno item 6</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="view-all center">
+                        <a class="btn-action" href="collections.html">
+                            View All
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end Newsletter -->
+    <!-- end Montono -->
 
     <!-- Team -->
-    <section class="tf-section team">
+    <section class="tf-section team" id="team">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -567,149 +579,292 @@
     </section>   
     <!-- end Team -->
 
-    <!-- Partners -->
-    <section class="tf-section partners">
+    <!-- Technology -->
+    <section class="tf-section technology" id="technology">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <div class="block-text center">
-                        <h1 class="heading-bg" data-aos="fade-in" data-aos-duration="1000"><span>Team</span></h1>
-                        <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">Partners</h5>
-                        <h3 class="title mb-28" data-aos="fade-up" data-aos-duration="1000">We Are Partnered <br> with Top Brands </h3>
+                        <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">Technology</h5>
+                        <h3 class="title mb-28" data-aos="fade-up" data-aos-duration="1000">Monteno unique Technology</h3>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="partners__body" data-aos="fade-up">
-                        <div class="box-partner border-r border-b">
-                            <a href="#"><img src="assets/images/partners/logo-01.png" alt="Monteno"></a>
+            <div class="row mt-53">
+                <div class="col-xl-6 col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="icon-box bg-2" data-aos="fade-up">
+                                <div class="icon">
+                                    <img src="assets/images/icon/database.png" alt="Monteno">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="h5">
+                                        Safe Database
+                                    </a>
+                                    <p class="fs-16">Aliquam erat volutpat. Fusce sit amet</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="box-partner border-r border-b">
-                            <a href="#"><img src="assets/images/partners/logo-02.png" alt="Monteno"></a>
+                        <div class="col-md-6">
+                            <div class="icon-box bg-2" data-aos="fade-up">
+                                <div class="icon">
+                                    <img src="assets/images/icon/lock.png" alt="Monteno">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="h5">
+                                        Safe Database
+                                    </a>
+                                    <p class="fs-16">Aliquam erat volutpat. Fusce sit amet</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="box-partner border-r border-b">
-                            <a href="#"><img src="assets/images/partners/logo-03.png" alt="Monteno"></a>
+                        <div class="col-md-6">
+                            <div class="icon-box bg-2" data-aos="fade-up">
+                                <div class="icon">
+                                    <img src="assets/images/icon/paymentt.png" alt="Monteno">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="h5">
+                                        verify payment
+                                    </a>
+                                    <p class="fs-16">Aliquam erat volutpat. Fusce sit amet</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="box-partner border-b">
-                            <a href="#"><img src="assets/images/partners/logo-04.png" alt="Monteno"></a>
+                        <div class="col-md-6">
+                            <div class="icon-box bg-2" data-aos="fade-up">
+                                <div class="icon">
+                                    <img src="assets/images/icon/timestaps.png" alt="Monteno">
+                                </div>
+                                <div class="content">
+                                    <a href="#" class="h5">
+                                        Timestamp server
+                                    </a>
+                                    <p class="fs-16">Aliquam erat volutpat. Fusce sit amet</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="box-partner border-r">
-                            <a href="#"><img src="assets/images/partners/logo-05.png" alt="Monteno"></a>
-                        </div>
-                        <div class="box-partner border-r">
-                            <a href="#"><img src="assets/images/partners/logo-06.png" alt="Monteno"></a>
-                        </div>
-                        <div class="box-partner border-r">
-                            <a href="#"><img src="assets/images/partners/logo-07.png" alt="Monteno"></a>
-                        </div>
-                        <div class="box-partner">
-                            <a href="#"><img src="assets/images/partners/logo-08.png" alt="Monteno"></a>
-                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-12">
+                    <div class="group-image">
+                        <img src="assets/images/items/technology.png" alt="Monteno">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- end Partners -->
+    </section>   
+    <!-- end Technology -->
 
     <!-- Testimonial -->
-    <section class="tf-section testimonials">
+    <section class="tf-section testimonial" id="testimonial">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="block-text center">
+                        <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">Testimonial</h5>
+                        <h3 class="title mb-28" data-aos="fade-up" data-aos-duration="1000">What People Say <br> About us</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <!-- Slider main container -->
-                    <div class="swiper swiper-testimonials">
-                        <!-- Additional required wrapper -->
+                    <div class="testimonial__content style-2">
+                    <div class="swiper swiper-testimonial2">
                         <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide">
-                            <div class="testimonials-box">
-                                <div class="image" data-aos="fade-right">
-                                    <img src="assets/images/testimonial/testimonial-01.jpg" alt="Monteno">
+                            <div class="swiper-slide">
+                                <div class="box-testimonial">
+                                    <img class="quote" src="assets/images/testimonial/left-quote1.png" alt="Monteno">
+                                    <p class="text">Keniam, quis nostrud exerci ut aliquip ex ea com modo cons equ prehen derit in voluptate velit esse cillum dolore eu fu giat nulla parinon proid</p>
+                                    <div class="info">
+                                        <img src="assets/images/testimonial/avt-02.png" alt="Monteno">
+                                        <div>
+                                            <h6>Paul Harrison </h6>
+                                            <p class="fs-16">Founder & CEO</p>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                <div class="block-text ">
-                                    <h5 class="sub-title mb-10" >Testimonial</h5>
-                                    <h3 class="title">What People Say </h3>
-                                    <div class="message">
-                                        <img src="assets/images/icon/left-quote.png" alt="Monteno">
-                                        <div class="message-content" data-aos="fade-up" data-aos-duration="1000">
-                                            <p class="text">Keniam, quis nostrud exerci ut aliquip ex ea com modo consequat. Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla parinon proident, sunt in culpa</p>
-
-                                            <div class="info">
-                                                <img src="assets/images/testimonial/avt-01.png" alt="Monteno">
-                                                <h6>Paul Harrison,</h6>
-                                                <p class="fs-16">Founder & CEO</p>
-                                            </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box-testimonial">
+                                    <img class="quote" src="assets/images/testimonial/left-quote1.png" alt="Monteno">
+                                    <p class="text">Keniam, quis nostrud exerci ut aliquip ex ea com modo cons equ prehen derit in voluptate velit esse cillum dolore eu fu giat nulla parinon proid</p>
+                                    <div class="info">
+                                        <img src="assets/images/testimonial/avt-03.png" alt="Monteno">
+                                        <div>
+                                            <h6>Paul Harrison </h6>
+                                            <p class="fs-16">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box-testimonial">
+                                    <img class="quote" src="assets/images/testimonial/left-quote1.png" alt="Monteno">
+                                    <p class="text">Keniam, quis nostrud exerci ut aliquip ex ea com modo cons equ prehen derit in voluptate velit esse cillum dolore eu fu giat nulla parinon proid</p>
+                                    <div class="info">
+                                        <img src="assets/images/testimonial/avt-04.png" alt="Monteno">
+                                        <div>
+                                            <h6>Paul Harrison </h6>
+                                            <p class="fs-16">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box-testimonial">
+                                    <img class="quote" src="assets/images/testimonial/left-quote1.png" alt="Monteno">
+                                    <p class="text">Keniam, quis nostrud exerci ut aliquip ex ea com modo cons equ prehen derit in voluptate velit esse cillum dolore eu fu giat nulla parinon proid</p>
+                                    <div class="info">
+                                        <img src="assets/images/testimonial/avt-02.png" alt="Monteno">
+                                        <div>
+                                            <h6>Paul Harrison </h6>
+                                            <p class="fs-16">Founder & CEO</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="box-testimonial">
+                                    <img class="quote" src="assets/images/testimonial/left-quote1.png" alt="Monteno">
+                                    <p class="text">Keniam, quis nostrud exerci ut aliquip ex ea com modo cons equ prehen derit in voluptate velit esse cillum dolore eu fu giat nulla parinon proid</p>
+                                    <div class="info">
+                                        <img src="assets/images/testimonial/avt-03.png" alt="Monteno">
+                                        <div>
+                                            <h6>Paul Harrison </h6>
+                                            <p class="fs-16">Founder & CEO</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="testimonials-box">
-                                <div class="image">
-                                    <img src="assets/images/testimonial/testimonial-01.jpg" alt="Monteno">
-                                </div>
+                        <div class="swiper-pagination"></div>
 
-                                <div class="block-text ">
-                                    <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">Testimonial</h5>
-                                    <h3 class="title" data-aos="fade-up" data-aos-duration="1000">What People Say </h3>
-                                    <div class="message">
-                                        <img src="assets/images/icon/left-quote.png" alt="Monteno" data-aos="fade-right" >
-                                        <div class="message-content" data-aos="fade-up" data-aos-duration="1000">
-                                            <p class="text">Keniam, quis nostrud exerci ut aliquip ex ea com modo consequat. Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla parinon proident, sunt in culpa</p>
-
-                                            <div class="info">
-                                                <img src="assets/images/testimonial/avt-01.png" alt="Monteno">
-                                                <h6>Paul Harrison,</h6>
-                                                <p class="fs-16">Founder & CEO</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="testimonials-box">
-                                <div class="image">
-                                    <img src="assets/images/testimonial/testimonial-01.jpg" alt="Monteno">
-                                </div>
-
-                                <div class="block-text ">
-                                    <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">Testimonial</h5>
-                                    <h3 class="title" data-aos="fade-up" data-aos-duration="1000">What People Say </h3>
-                                    <div class="message">
-                                        <img src="assets/images/icon/left-quote.png" alt="Monteno" data-aos="fade-right" >
-                                        <div class="message-content" data-aos="fade-up" data-aos-duration="1000">
-                                            <p class="text">Keniam, quis nostrud exerci ut aliquip ex ea com modo consequat. Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat nulla parinon proident, sunt in culpa</p>
-
-                                            <div class="info">
-                                                <img src="assets/images/testimonial/avt-01.png" alt="Monteno">
-                                                <h6>Paul Harrison,</h6>
-                                                <p class="fs-16">Founder & CEO</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
                     
                     </div>
-                    
+                        
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- end Testimonial -->
+    
+    <!-- Counter -->
+    <section class="tf-section section-counter" id="counter">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="counter__body" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="counter">
+                            <img src="assets/images/icon/users.png" alt="">
+                            <div class="number-counter">
+                                <span class="number" data-speed="1000" data-to="100" data-inviewport="yes">100</span>K
+                            </div>
+                            <h5 class="title">Registered User</h5>    
+                        </div>
+                        <div class="counter">
+                            <img src="assets/images/icon/assets.png" alt="">
+                            <div class="number-counter">
+                                <span class="number" data-speed="1000" data-to="5" data-inviewport="yes">5</span>M
+                            </div>
+                            <h5 class="title">Total Assets</h5>    
+                        </div>
+                        <div class="counter">
+                            <img src="assets/images/icon/trading.png" alt="">
+                            <div class="number-counter">
+                                <span class="number" data-speed="1000" data-to="10" data-inviewport="yes">10</span>B
+                            </div>
+                            <h5 class="title">Yearly Trading</h5>    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Counter -->
+
+    <!-- Blog -->
+    <section class="tf-section blog" id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="block-text center">
+                        <h1 class="heading-bg" data-aos="fade-in" data-aos-duration="1000"><span>Blog</span></h1>
+                        <h5 class="sub-title mb-10" data-aos="fade-up" data-aos-duration="1000">From Our Blog</h5>
+                        <h3 class="title mb-28" data-aos="fade-up" data-aos-duration="1000">Read Our Recent<br>News & Articles</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-51">
+                <div class="col-12">
+                    <div class="swiper swiper-blog">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="blog__box" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="blog-img">
+                                        <a href="blog-single.html">
+                                            <img src="assets/images/blog/blog-01.jpg" alt="Monteno">
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <a href="blog-single.html" class="category">NFT Trading</a>
+                                        <a href="blog-single.html" class="h6 title">How to buy and sale nft in a easiest way</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog__box" data-aos="fade-up" data-aos-duration="1200">
+                                    <div class="blog-img">
+                                        <a href="blog-single.html">
+                                            <img src="assets/images/blog/blog-02.jpg" alt="Monteno">
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <a href="blog-single.html" class="category">NFT Trading</a>
+                                        <a href="blog-single.html" class="h6 title">How to buy and sale nft in a easiest way</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog__box" data-aos="fade-up" data-aos-duration="1600">
+                                    <div class="blog-img">
+                                        <a href="blog-single.html">
+                                            <img src="assets/images/blog/blog-03.jpg" alt="Monteno">
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <a href="blog-single.html" class="category">NFT Trading</a>
+                                        <a href="blog-single.html" class="h6 title">How to buy and sale nft in a easiest way</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="blog__box" data-aos="fade-up" data-aos-duration="800">
+                                    <div class="blog-img">
+                                        <a href="blog-single.html">
+                                            <img src="assets/images/blog/blog-04.jpg" alt="Monteno">
+                                        </a>
+                                    </div>
+                                    <div class="blog-content">
+                                        <a href="blog-single.html" class="category">NFT Trading</a>
+                                        <a href="blog-single.html" class="h6 title">How to buy and sale nft in a easiest way</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Blog -->
 
     <!-- FAQ -->
-    <section class="tf-section faq">
+    <section class="tf-section faq" id="faq">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -721,60 +876,37 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-xl-6 col-md-12">
                     <div class="flat-accordion" data-aos="fade-up">
                         <div class="flat-toggle">
                             <h5 class="toggle-title active">When the musics over turn off the light?</h5>
                             <div class="toggle-content">
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquip</p>
+                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex when</p>
                             </div>
                         </div>
                         <div class="flat-toggle">
                             <h5 class="toggle-title">What is the best way to collect NFT?</h5>
                             <div class="toggle-content">
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquip</p>
+                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex when</p>
                             </div>
                         </div>
                         <div class="flat-toggle">
                             <h5 class="toggle-title">Why NFT Trading is so popular?</h5>
                             <div class="toggle-content">
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquip</p>
+                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex when</p>
                             </div>
                         </div>
                         <div class="flat-toggle">
                             <h5 class="toggle-title">How do you trade on Montono easily?</h5>
                             <div class="toggle-content">
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquip</p>
+                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex when</p>
                             </div>
                         </div>                       
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="flat-accordion" data-aos="fade-up">
-                        <div class="flat-toggle">
-                            <h5 class="toggle-title">When the musics over turn off the light?</h5>
-                            <div class="toggle-content">
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquip</p>
-                            </div>
-                        </div>
-                        <div class="flat-toggle">
-                            <h5 class="toggle-title">What is the best way to collect NFT?</h5>
-                            <div class="toggle-content">
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquip</p>
-                            </div>
-                        </div>
-                        <div class="flat-toggle">
-                            <h5 class="toggle-title">Why NFT Trading is so popular?</h5>
-                            <div class="toggle-content">
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquip</p>
-                            </div>
-                        </div>
-                        <div class="flat-toggle">
-                            <h5 class="toggle-title">How do you trade on Montono easily?</h5>
-                            <div class="toggle-content">
-                            <p class="fs-18">Oficia dese runt mollit anim id est labo met, conse ctetur adipi smod tempor inc ididunt ut labore et dolore qui inim veniam, quis nostrud ex ercitation ullamco laboris nisi ut aliquip</p>
-                            </div>
-                        </div>                     
+                <div class="col-xl-6 col-md-12">
+                    <div class="group-image">
+                        <img src="assets/images/shape/faq.png" alt="Monteno">
                     </div>
                 </div>
             </div>
@@ -782,39 +914,86 @@
     </section>
     <!-- end FAQ -->
 
-    <!-- Action -->
-    <section class="tf-section action">
+    <!-- Newsletter -->
+    <section class="tf-section newsletter" id="newsletter">
         <div class="container">
             <div class="row">
+
                 <div class="col-12">
-                    <div class="action__body" data-aos="fade-up">
+                    <div class="newsletter__body" data-aos="fade-up">
                         <div class="block-text">
-                            <h3 class="mb-13">Create Your NFT Portfolio</h3>
-                            <p class="fs-21 mb-7">Get udpated with news, tips & tricks</p>
+                            <h3 class="mb-13">Get Newsletter</h3>
+                            <p class="fs-21">
+                                Get udpated with news, tips & tricks
+                            </p>
                         </div>
-                        <a href="contact.html" class="btn-action style-2">Join Now</a>
+                        <form class="body__form">
+                            <div class="form-group">
+                              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email here" required>
+                              <button type="submit" class="btn btn-primary">Subscribe</button>
+                            </div>
+                          </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- end Action -->
+    <!-- end Newsletter -->
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer style-2" id="footer">
         <div class="container">
             <div class="row">
                 <div class="footer__body">
-                    <img src="assets/images/logo.png" alt="Monteno" data-aos="fade-down">
-                    <p class="desc fs-18" data-aos="fade-up">
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit ani 
-                    </p>
-                    <ul class="social">
-                        <li data-aos="fade-up" data-aos-duration="1000"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li data-aos="fade-up" data-aos-duration="1200"><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li data-aos="fade-up" data-aos-duration="1400"><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                        <li data-aos="fade-up" data-aos-duration="1600"><a href="#"><i class="fab fa-youtube"></i></a></li>
-                    </ul>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="info">
+                            <img src="assets/images/logo-2.png" alt="Monteno">
+                            <p class="desc fs-18">
+                                Duis aute irure dolor in reprehen derit in voluptate velit esse cillum dolore eu fugiat pariatur.  
+                            </p>
+                            <ul class="social">
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-6">
+                        <div class="link s1">
+                            <h5 class="title">Quick links</h5>
+                            <ul>
+                                <li><a href="collections.html">NFT Trading</a></li>
+                                <li><a href="about.html">Development</a></li>
+                                <li><a href="about.html">Advertisement</a></li>
+                                <li><a href="about.html">Career</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-6">
+                        <div class="link s2">
+                            <h5 class="title">Help</h5>
+                            <ul>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="team.html">Team Members</a></li>
+                                <li><a href="faq.html">Support</a></li>
+                                <li><a href="about.html">Refund Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-12">
+                        <div class="newsletter">
+                            <h5 class="title">Newsletter</h5>
+                            <p class="fs-18">Duis aute irure dolor in reprehen derit in voluptate velit.</p>
+                            <form action="#">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Your email here" required>
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    </div>
                 </div>
                 <div class="footer_bottom">
                     <p class="fs-16">Copyright © 2022, Monteno - NFT Portfolio HTML Template. Designed by <a href="https://themeforest.net/user/themesflat/portfolio">Themesflat</a></p>
@@ -833,7 +1012,7 @@
     <script src="app/js/jquery.min.js"></script>
     <script src="app/js/swiper-bundle.min.js"></script>
     <script src="app/js/swiper.js"></script>
-    <script src="app/js/app.js"></script>
+    
     <script src="app/js/aos.js"></script>
     <script type="text/javascript" src="app/js/vanilla-tilt.js"></script>
     <script type="text/javascript">
@@ -849,6 +1028,11 @@
     <script>
         AOS.init();
       </script>
+      
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> 
+        <script type="text/javascript" src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/js/kinetic.js"></script> 
+        <script type="text/javascript" src="https://www.jqueryscript.net/demo/Modern-Circular-jQuery-Countdown-Timer-Plugin-Final-Countdown/jquery.final-countdown.js"></script> 
+        <script src="app/js/app.js"></script>
 
 </body>
 </html>
