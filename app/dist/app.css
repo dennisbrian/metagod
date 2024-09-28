@@ -55,6 +55,7 @@ h6,
 h2,
 .h2 {
   font-size: 60px;
+  font-family: "dalek_pinpoint";
 }
 
 h3,
@@ -64,6 +65,7 @@ h3,
 
 h5,
 .h5 {
+  font-family: "dalek_pinpoint";
   font-size: 24px;
 }
 
