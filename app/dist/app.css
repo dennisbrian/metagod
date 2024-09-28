@@ -314,7 +314,7 @@ a {
   display: inline-block;
 }
 a:hover {
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
   transition: all 0.3s;
 }
 
@@ -323,7 +323,7 @@ a:hover {
 }
 
 .color-main {
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 
 .color2 {
@@ -484,7 +484,7 @@ a:hover {
   bottom: -5px;
   width: 0;
   height: 2px;
-  background: #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
   transition: width 0.3s ease;
 }
 .header .header__right .main-nav .menu li a::before {
@@ -545,7 +545,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 2px;
-  background: #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
 }
 .header .header__right .main-nav .menu li:hover .sub-menu {
   opacity: 1;
@@ -645,7 +645,7 @@ a:hover {
 }
 .header .current-menu-item > a,
 .header .current-item a {
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
 }
 
 @keyframes criss-cross-left {
@@ -680,13 +680,13 @@ a:hover {
 }
 .btn-action {
   padding: 11px 45px;
-  border: 2px solid #fd562a;
+  border: 2px solid linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
   border-radius: 27px;
   transition: color 0.4s linear;
   position: relative;
   overflow: hidden;
   display: inline-block;
-  font-family: "dalek_pinpoint";
+  font-family: "Roboto";
 }
 .btn-action:hover {
   color: #fff;
@@ -710,7 +710,7 @@ a:hover {
   content: "";
   width: 20px;
   height: 20px;
-  background-color: #fd562a;
+  background-color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
   border-radius: 50%;
 }
 .btn-action::before {
@@ -723,14 +723,14 @@ a:hover {
 }
 
 .btn-action.style-2 {
-  background: #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
   padding: 20px 48px;
   border-radius: 33px;
   z-index: 1;
   border: none;
 }
 .btn-action.style-2:hover {
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
   transition-delay: 0.5s;
 }
 .btn-action.style-2::before, .btn-action.style-2::after {
@@ -802,7 +802,7 @@ a:hover {
   left: 0;
   width: 36px;
   height: 5px;
-  background: #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
 }
 .block-text .desc {
   font-size: 24px;
@@ -849,7 +849,7 @@ a:hover {
 .block-text ul li i {
   margin-right: 29px;
   font-weight: 300;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
   margin-top: 4px;
   font-size: 22px;
 }
@@ -1190,6 +1190,8 @@ a:hover {
 .action .action__body .btn-action.style-2 {
   padding: 18px 60px;
   font-size: 20px;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
+
 }
 
 .page-blog-single .action {
@@ -1417,7 +1419,7 @@ a:hover {
   height: 570px;
 }
 .swiper.swiper-vertical .swiper-wrapper .swiper-slide {
-  height: auto !important;
+  width: 150px;
 }
 
 .content-right {
@@ -1440,7 +1442,10 @@ a:hover {
 }
 
 .team .swiper-slide {
-  padding-top: 51px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .swiper .swiper-pagination-bullet {
@@ -1465,7 +1470,7 @@ a:hover {
   content: "";
   width: 24px;
   height: 24px;
-  border: 2px solid #fd562a;
+  border: 2px solid linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
   overflow: visible;
 }
 
@@ -1527,7 +1532,7 @@ a:hover {
   font-family: "Font Awesome 5 Pro";
   font-weight: 100;
   font-size: 60px;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .road-map .swiper-button-disabled::after {
   color: #fff;
@@ -1562,7 +1567,7 @@ a:hover {
 
 .swiper-portfolio.s1 {
   margin-bottom: 30px;
-  padding: 0 190px;
+  padding: 0 150px;
 }
 @media only screen and (max-width: 1024px) {
   .swiper-portfolio.s1 {
@@ -1645,7 +1650,7 @@ a:hover {
   font-family: "Font Awesome 5 Pro";
   font-weight: 100;
   font-size: 22px;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .collection .swiper-button-next:after {
   content: "\f105";
@@ -1653,22 +1658,14 @@ a:hover {
 .collection .swiper-button-prev:after {
   content: "\f104";
 }
-
-.bg-1 {
-  background-color: #7153d9;
-}
-
-.bg-2 {
-  background-color: #4526b1;
-}
-
-.bg-3 {
-  background-color: #4c22e1;
+.bg-1, .bg-2, .bg-3 {
+  background-color: #ff8c00; /* Using the color from the provided image */
 }
 
 .item {
-  width: 170px;
-  height: 170px;
+  width: 100px;
+  height: 100px;
+  top: 185px;
   border-radius: 20px;
   display: flex;
   justify-content: center;
@@ -1781,38 +1778,38 @@ a:hover {
   top: -4%;
 }
 .hero-slider.style-2 .item:nth-child(2) {
-  width: 170px;
-  height: 170px;
+  width: 100px;
+  height: 100px;
   left: 1.3%;
   top: 34%;
 }
 .hero-slider.style-2 .item:nth-child(3) {
-  width: 120px;
-  height: 120px;
+  width: 100px;
+  height: 100px;
   left: 13.6%;
   top: 91.2%;
 }
 .hero-slider.style-2 .item:nth-child(4) {
-  width: 149px;
-  height: 149px;
+  width: 100px;
+  height: 100px;
   right: 19.3%;
   top: -13%;
 }
 .hero-slider.style-2 .item:nth-child(5) {
-  width: 170px;
-  height: 170px;
+  width: 100px;
+  height: 100px;
   right: 4.5%;
   top: 24%;
 }
 .hero-slider.style-2 .item:nth-child(6) {
-  width: 91px;
-  height: 91px;
+  width: 100px;
+  height: 100px;
   right: 12.2%;
   top: 88%;
 }
 .hero-slider.style-2 .item:nth-child(7) {
-  width: 134px;
-  height: 134px;
+  width: 100px;
+  height: 100px;
   right: 24%;
   top: 111%;
 }
@@ -2039,7 +2036,7 @@ a:hover {
 }
 
 .home-3 .image-box .image-box__title {
-  background: #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .home-3 .image-box .image-box__title a:hover {
   color: #fff;
@@ -2253,7 +2250,7 @@ a:hover {
 }
 .road-map__content .box-time span i {
   font-size: 16px;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 @media only screen and (max-width: 1024px) {
   .road-map__content.s1 {
@@ -2382,7 +2379,7 @@ a:hover {
   font-size: 20px;
 }
 .team-box .img-team .social p a:hover {
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .team-box .team-info {
   padding-top: 30px;
@@ -2445,7 +2442,7 @@ a:hover {
   margin-top: 25px;
 }
 .team-box-2:hover .img-team {
-  border: 6px solid #fd562a;
+  border: 6px solid linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .team-box-2:hover .img-team::before {
   height: 100%;
@@ -2747,7 +2744,7 @@ a:hover {
   margin-bottom: 12px;
 }
 .flat-tabs .menu-tab .item-title.active {
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .flat-tabs .menu-tab .item-title:nth-last-child(1) {
   border: none;
@@ -2780,7 +2777,7 @@ a:hover {
 }
 .blog__box .blog-content .category {
   font-size: 16px;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
   margin-bottom: 4px;
   display: block;
 }
@@ -2902,7 +2899,7 @@ a:hover {
 }
 .blog-grid .blog-box .blog-content .meta li a i {
   margin-right: 8px;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .blog-grid .blog-box .blog-content .title {
   line-height: 1.4;
@@ -2958,7 +2955,7 @@ a:hover {
 }
 .blog-single .blog-body .blog-content .meta li a i {
   margin-right: 10px;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 @media only screen and (max-width: 767px) {
   .blog-single .blog-body .blog-content .meta li {
@@ -2991,7 +2988,7 @@ a:hover {
   top: 0;
   width: 3px;
   height: 100%;
-  background: #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .blog-single .blog-body .blog-content blockquote p {
   font-style: italic;
@@ -3079,8 +3076,8 @@ a:hover {
   font-family: "Roboto";
 }
 .blog-single .blog-body .blog-content .action-group .tag li:hover {
-  background: #fd562a;
-  border: 1px solid #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
+  border: 1px solid linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .blog-single .blog-body .blog-content .action-group .tag li:hover a {
   color: #fff;
@@ -3116,7 +3113,7 @@ a:hover {
 }
 .blog-single .blog-body .blog-content.related-post .prev .action-right a i, .blog-single .blog-body .blog-content.related-post .next .action-right a i {
   font-size: 12px;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .blog-single .blog-body .blog-content.related-post .prev .action-right a.title, .blog-single .blog-body .blog-content.related-post .next .action-right a.title {
   font-size: 18px;
@@ -3284,7 +3281,7 @@ a:hover {
   color: #fff;
 }
 .pagination li.active, .pagination li:hover {
-  background: #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);      
 }
 
 .contact .contact-left {
@@ -3382,10 +3379,10 @@ a:hover {
 .form-group button {
   font-size: 20px;
   padding: 20px 97px 20px 59px;
-  background: #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
-  border-color: #fd562a;
+  border-color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
   overflow: hidden;
   position: relative;
 }
@@ -3409,8 +3406,8 @@ a:hover {
   transition: all 0.7s;
 }
 .form-group button:hover {
-  background: #fd562a;
-  border-color: #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
+  border-color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 .form-group button:hover:after {
   opacity: 1;
@@ -3460,7 +3457,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 .comment__form button.btn-action.style-2:hover {
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 
 .contact__form {
@@ -3489,7 +3486,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
 }
 .contact__form button.btn-action.style-2:hover {
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
 }
 
 .footer .footer__body {
@@ -3684,7 +3681,7 @@ a:hover {
   position: absolute;
   right: 19px;
   top: 33%;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
   font-size: 22px;
 }
 
@@ -3729,7 +3726,7 @@ a:hover {
   line-height: 44px;
   font-size: 13px;
   font-weight: 900;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%);
   left: 0;
   top: 0;
   height: 44px;
@@ -3740,13 +3737,13 @@ a:hover {
   -webkit-transition: all 400ms linear;
   -o-transition: all 400ms linear;
   transition: all 400ms linear;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
 }
 .progress-wrap svg path {
   fill: none;
 }
 .progress-wrap svg.progress-circle path {
-  stroke: #fd562a;
+  stroke: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
   stroke-width: 4;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -3906,7 +3903,7 @@ a:hover {
   width: 3px;
   height: 15px;
   border-radius: 1.5px;
-  background: #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
 }
 .side-bar__box .input-group {
   flex-wrap: nowrap;
@@ -3932,7 +3929,7 @@ a:hover {
   border-radius: 10px;
   height: 100%;
   border: none;
-  color: #fd562a;
+  color: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
   font-size: 20px;
 }
 .side-bar__box .input-group button:focus {
@@ -4007,8 +4004,8 @@ a:hover {
   font-family: "Roboto";
 }
 .side-bar__box .tag li:hover {
-  background: #fd562a;
-  border: 1px solid #fd562a;
+  background: linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
+  border: 1px solid linear-gradient(91.98deg, #078EA5 0%, #0A5666 100%); 
 }
 .side-bar__box .tag li:hover a {
   color: #fff;
