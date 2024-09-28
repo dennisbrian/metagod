@@ -371,10 +371,13 @@ a:hover {
   left: 0;
   width: 100%;
   z-index: 1000;
-  height: 170px;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid #03C1D8;
+  background: #021C1DCC;
+  backdrop-filter: blur(10px);
 }
 .header.is-fixed {
   opacity: 0;
@@ -387,9 +390,10 @@ a:hover {
 .header.is-fixed.is-small {
   position: fixed;
   top: 0;
-  opacity: 90%;
+  opacity: 100%;
   visibility: visible;
-  background: rgba(12, 37, 42, 0.5);
+  background: #021C1DCC;
+  backdrop-filter: blur(10px);
 }
 .header .header__right {
   display: flex;
